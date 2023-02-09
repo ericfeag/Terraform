@@ -1,4 +1,4 @@
-resource "aws_instance" "MyFirstInstance" {
-    ami = "ami-0568936c8d2b91c4e"
-    instance_type = "t2.micro"
+resource "aws_instance" "MyFirstInstnace" {
+  ami           = "ami-05692172625678b4e"
+  instance_type = "t2.micro"
 }
