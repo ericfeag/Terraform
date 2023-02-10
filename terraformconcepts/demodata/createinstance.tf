@@ -16,7 +16,7 @@ data "aws_ami" "latest-ubuntu" {
 
 }
 
-resource "aws_instance" "MyFirstInstnace" {
+resource "aws_instance" "MyFirstInstance" {
   ami           = data.aws_ami.latest-ubuntu.id
   instance_type = "t2.micro"
   availability_zone = data.aws_availability_zones.avilable.names[1]
