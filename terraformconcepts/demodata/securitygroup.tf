@@ -1,4 +1,4 @@
-data "aws_ip_ranges" "us_east_ip_range" {
+data "aws_ip_ranges" "us_east_ip_ranges" {
     regions = ["us-east-1", "us-east-2"]
     services = ["ec2"]
 }
