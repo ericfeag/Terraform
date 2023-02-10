@@ -14,7 +14,7 @@ resource "aws_security_group" "sg_custom_us_east" {
     }
 
     tags = {
-        CreateDate = aws.aws_ip_ranges.us_east_ip_range.create_date
+        CreateDate = data.aws.aws_ip_ranges.us_east_ip_range.create_date
         SyncToken = data.aws_ip_ranges.us_east_ip_range.sync_token 
     }
 }
