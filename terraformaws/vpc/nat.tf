@@ -3,7 +3,7 @@ resource "aws_eip" "levelup-nat" {
     vpc = true
 }
 
-resource "aws_nat_gateway" "levelpu-nat-gw" {
+resource "aws_nat_gateway" "levelup-nat-gw" {
   allocation_id = aws_eip.levelup-nat.id
   subnet_id     = aws_subnet.levelupvpc-public-1.id
   depends_on = [aws_internet_gateway.levelup-gw]

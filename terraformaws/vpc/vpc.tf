@@ -89,7 +89,7 @@ resource "aws_route_table" "levelup-public" {
   vpc_id = aws_vpc.levelupvpc.id
   route = {
     cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.levelupvpc-gw.id
+    gateway_id = aws_internet_gateway.levelup-gw.id
   }
   tags = {
     Name = "levelupvpc-public-1"
