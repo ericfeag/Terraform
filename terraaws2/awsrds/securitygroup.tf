@@ -22,7 +22,7 @@ resource "aws_security_group" "allow-levelup-ssh" {
   }
 }
 
-resource "aws_security_group" "allow-mariadb-" {
+resource "aws_security_group" "allow-mariadb" {
   name        = "allow mariadb"
   description = "sg for mariadb"
   vpc_id      = aws_vpc.levelupvpc.id
@@ -31,7 +31,7 @@ resource "aws_security_group" "allow-mariadb-" {
     from_port        = 3306
     to_port          = 3306
     protocol         = "tcp"
-    security_groups = [aws_security_group.allow_levelup-ssh.id]
+    security_groups = [aws_security_group.allow-levelup-ssh.id]
   }
 
   egress {
