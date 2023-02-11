@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow_levelup-ssh" {
+resource "aws_security_group" "allow-levelup-ssh" {
   name        = "allow_levelup-ssh"
   description = "sg allows ssh connection"
   vpc_id      = aws_vpc.levelupvpc.id
