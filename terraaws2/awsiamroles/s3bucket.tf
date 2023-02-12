@@ -1,4 +1,4 @@
-resource "aws_s3_bucket_" "levelup_s3bucket" {
+resource "aws_s3_bucket" "levelup_s3bucket" {
   bucket = "levelup_bucket_141"
   acl    = "private"
 
