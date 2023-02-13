@@ -19,7 +19,7 @@ resource "aws_internet_gateway" "levelup_igw" {
 }
 
 #AWS subnet for vpc
-resoruce "aws_subnet" "subnet_public" {
+resource "aws_subnet" "subnet_public" {
     vpc_id = aws_vpc.levelup_vpc.id
     cidr_block = var.cidr_subnet
     map_public_ip_on_launch = "true"
