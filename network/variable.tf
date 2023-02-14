@@ -1,23 +1,23 @@
 variable "region" {
-    default = "us-east-2"
+  default = "us-east-2"
 }
 
 variable "public_key_path" {
-    description = "public key path"
-    default = "~/.ssh/levelup_key.pub"
+  description = "Public key path"
+  default = "~/.ssh/levelup_key.pub"
 }
 
 variable "instance_ami" {
-    description = "ami for aws ec2 instance"
-    default = "ami-0521a1ab6cb98215d"
+  description = "AMI for aws EC2 instance"
+  default = "ami-05692172625678b4e"
 }
 
 variable "instance_type" {
-    description = "type for aws ec2 instance"
-    default = "t2.micro"
+  description = "type for aws EC2 instance"
+  default = "t2.micro"
 }
 
 variable "environment_tag" {
-    description = "Environment tag"
-    default = "Production"
+  description = "Environment tag"
+  default = "Production"
 }
