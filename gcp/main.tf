@@ -1,9 +1,8 @@
 provider "google" {
-    credentials = file("terraform-377916-79189c4bab3a.json")
-
     project = "terraform-377916"
     region = "us-east1"
     zone = "us-east1-c"
+    credentials = file("terraform-377916-79189c4bab3a.json")
 }
 
 resource "google_compute_network" "vpc_network" {
