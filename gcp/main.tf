@@ -14,6 +14,5 @@ terraform {
   backend "gcs" {
     bucket = "terraform54"
     prefix = "terraform-sample-practice"
-    credentials = file("terraform-377916-79189c4bab3a.json")
   }
 }
